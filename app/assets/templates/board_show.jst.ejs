@@ -1,0 +1,11 @@
+<h1><%= board.escape('title') %></h1>
+
+<ul class="all-boards">
+  <% board.lists().each(function (list) { %>
+    <li>
+      <a class='list-link' data-id='<%= list.id %>' < href="#api/list/<%= list.id %>">
+        <%= list.escape('title') %>
+      </a>
+    </li>
+  <% }) %>
+</ul>

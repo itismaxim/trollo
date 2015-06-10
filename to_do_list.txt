@@ -1,0 +1,19 @@
+Add a new board view class, so that you can create boards.
+
+When the user creates a board, it should redirect them to the board's show page.
+You can use Backbone.history.navigate() or the router's navigate method for this.
+
+  The things has no link.
+  There is a listener.
+  On a click, the add-board class is removed and the add-board-input class is added.
+  The + is replaced with a form.
+  Pressing enter submits the form. It removes the add-board-input class,
+  and turns the button into a regular link.
+
+
+
+
+
+
+Add the ability to create lists, via a new list view.
+Add a button to delete the board.

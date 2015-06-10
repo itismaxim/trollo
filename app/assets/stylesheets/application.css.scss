@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery-ui
+ *= require_tree .
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #E6E6E6;
+}
+
+.navbar-header{
+  background-color: white;
+}
+
+.navbar{
+  background-color: white;
+}
+
+.navbar-header img {
+  float: left;
+}
+
+.all-boards {
+  // display: inline-block;
+  // vertical-align: top;
+  // text-align: center;
+  // width: 90%;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  // This isn't actually centering shit yet.
+  // Ideally, they would be in a grid. A centered grid.
+  // That autoexpands to fit as many blocks into a row as it can.
+  // Well then! Sounds like a project!
+}
+
+
+.board-link {
+  display: block;
+  float: left;
+  width: 250px;
+  height: 100px;
+  background-color: #3366FF;
+  border-radius: 25px;
+
+  text-align: center;
+  color: white;
+  font-size: 30px;
+
+  padding: 30px;
+  margin: 50px;
+}
+
+.board-link:hover {
+  background-color: #6699FF;
+  color: white;
+  text-decoration: none;
+}
+
+.board-link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.board-link:focus {
+  text-decoration: none;
+}
+
+.add-board {
+  font-size: 80px;
+  vertical-align: middle;
+  padding: 0px;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+.add-board-form {
+  border: none;
+  outline: 0;
+}
+
+.add-board-form:hover {
+  background-color: #3366FF;
+}
+
+
+.class-link {
+  display: block;
+}
+
+.troll-face {
+  float: left;
+}
+
+.clear-fix:after {
+  display: block;
+  content: '';
+  clear: both;
+}

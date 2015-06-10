@@ -1,0 +1,15 @@
+<h1>Your Boards</h1>
+
+<ul class="all-boards clear-fix">
+  <% boards.each (function (board) { %>
+    <li>
+      <a class='board-link' data-id='<%= board.id %>' < href="#api/boards/<%= board.id %>">
+        <%= board.escape('title') %>
+      </a>
+    </li>
+  <% }) %>
+
+  <a class='board-link add-board'>
+    ✚
+  </a>
+</ul>
